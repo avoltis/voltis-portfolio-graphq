@@ -1,12 +1,15 @@
-# voltis-portfolio-graphql
+# voltis-portfolio-graphql 
+DEMO : https://portfolio-graphql-voltis.herokuapp.com/
+
 graphQL layer on top of rest server api 
 restAPI: https://portfolio-voltis.herokuapp.com/
-graphQL: http://localhost:4000/
 
 ## Start App
 Make sure you run:
 `npm install`
 `npm start`
+
+graphQL: http://localhost:4000/
 
 ## graphQL query example 
 
