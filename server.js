@@ -3,47 +3,47 @@ import { ApolloServer, gql } from 'apollo-server';
 
 const typeDefs = gql`
   type certifications {
-    name: String!
-    issuingOrganization: String!
-    issueDate: String!
-    expirationDate: String!
-    credentialID: String!
-    credentialUrl: String!
+    name: String
+    issuingOrganization: String
+    issueDate: String
+    expirationDate: String
+    credentialID: String
+    credentialUrl: String
   }
 
   type education {
-    university: String!
-    degree: String!
-    startYear: String!
-    endYear: String!
-    timeLine: String!
+    university: String
+    degree: String
+    startYear: String
+    endYear: String
+    timeLine: String
     present: Boolean
-    fieldOfStudy: String!
-    address: String!
+    fieldOfStudy: String
+    address: String
   }
 
   type experience {
-    company: String!
-    title: String!
-    startDate: String!
-    endDate: String!
-    timeLine: String!
+    company: String
+    title: String
+    startDate: String
+    endDate: String
+    timeLine: String
     present: Boolean
-    description: String!
-    address: String!
+    description: String
+    address: String
   }
 
   type social {
-    github: String!
-    linkedIn: String!
+    github: String
+    linkedIn: String
   }
 
   type data {
-    firstName: String!
-    lastName: String!
-    title: String!
-    address: String!
-    summary: String!
+    firstName: String
+    lastName: String
+    title: String
+    address: String
+    summary: String
     social: social
     experience: [experience]
     education: [education]
@@ -54,13 +54,13 @@ const typeDefs = gql`
   }
 
   type Query {
-    portfolio: data
+    getPortfolio: data
   }
 `;
 
 const resolvers = {
   Query: {
-    portfolio: (root, args, { dataSources }) =>
+    getPortfolio: (root, args, { dataSources }) =>
       dataSources.portfolioAPI.getPortfolio()
   }
 };
@@ -75,6 +75,6 @@ const server = new ApolloServer({
 
 debugger;
 
-server.listen().then(({ url }) => {
+server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
   console.log(`🚀 Server ready at ${url}`);
 });
