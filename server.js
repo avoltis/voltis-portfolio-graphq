@@ -70,7 +70,9 @@ const server = new ApolloServer({
   resolvers,
   dataSources: () => ({
     portfolioAPI: new PortfolioAPI()
-  })
+  }),
+  introspection: true,
+  playground: true
 });
 
 debugger;
