@@ -7,6 +7,7 @@ export class PortfolioAPI extends RESTDataSource {
   }
 
   async getPortfolio() {
-    return await this.get('/');
+    const jsonResp = await this.get('/');
+    return jsonResp.data;
   }
 }
