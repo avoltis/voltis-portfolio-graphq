@@ -27,11 +27,13 @@ graphQL: http://localhost:4000/
     experience{
       company, 
       title, 
+      email,
       startDate, 
       endDate, 
       timeLine, 
       present, 
-      description, 
+      description,
+      skills, 
       address
     }
     education{

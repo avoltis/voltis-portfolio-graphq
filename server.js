@@ -30,6 +30,7 @@ const typeDefs = gql`
     timeLine: String
     present: Boolean
     description: String
+    skills: [String]
     address: String
   }
 
