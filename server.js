@@ -36,6 +36,7 @@ const typeDefs = gql`
   type social {
     github: String
     linkedIn: String
+    email: String
   }
 
   type data {
