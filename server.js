@@ -31,6 +31,7 @@ const typeDefs = gql`
     present: Boolean
     description: String
     address: String
+    skills: [String]
     image: String
   }
 
