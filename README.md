@@ -77,3 +77,6 @@ need to add Config Vars
 NODE_ENV to production
 
 - `heroku open` 
+
+
+## MIT license - Please include permission notice
