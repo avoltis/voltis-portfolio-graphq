@@ -3,9 +3,6 @@
 DEMO : https://portfolio-graphql-voltis.herokuapp.com/
 
 graphQL layer on top of rest server api
-
-rest api reference repo: https://github.com/avoltis/voltis-portfolio-api
-
 restAPI: https://portfolio-voltis.herokuapp.com/
 
 ## Start App
@@ -18,7 +15,7 @@ graphQL: http://localhost:4000/
 
 ## graphQL query example
 
-`{ getPortfolio { firstName, lastName, title, address, summary, resume social{ github, linkedIn } experience{ company, title, startDate, endDate, timeLine, present, description, address } education{ university, degree, startYear, endYear, timeLine, present, fieldOfStudy, address } certifications{ name, issuingOrganization, issueDate, expirationDate, credentialID, credentialUrl } skills, topSkills, languages } }`
+`{ getPortfolio { firstName, lastName, title, address, summary, resume, social{ github, linkedIn } experience{ company, title, startDate, endDate, timeLine, image, present, description, address } education{ university, degree, startYear, endYear, timeLine, present, fieldOfStudy, address } certifications{ name, issuingOrganization, issueDate, expirationDate, credentialID, credentialUrl } skills, topSkills, languages } }`
 
 ## Publish to heroku
 
@@ -34,5 +31,3 @@ need to add Config Vars
 NODE_ENV to production
 
 - `heroku open`
-
-## MIT license - Please include permission notice
