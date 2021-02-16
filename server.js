@@ -1,5 +1,5 @@
-import { PortfolioAPI } from './datasource';
-import { ApolloServer, gql } from 'apollo-server';
+import { PortfolioAPI } from "./datasource";
+import { ApolloServer, gql } from "apollo-server";
 
 const typeDefs = gql`
   type certifications {
@@ -31,6 +31,7 @@ const typeDefs = gql`
     present: Boolean
     description: String
     address: String
+    image: String
   }
 
   type social {
@@ -46,6 +47,7 @@ const typeDefs = gql`
     address: String
     summary: String
     social: social
+    resume: String
     experience: [experience]
     education: [education]
     certifications: [certifications]
@@ -62,18 +64,18 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     getPortfolio: (root, args, { dataSources }) =>
-      dataSources.portfolioAPI.getPortfolio()
-  }
+      dataSources.portfolioAPI.getPortfolio(),
+  },
 };
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   dataSources: () => ({
-    portfolioAPI: new PortfolioAPI()
+    portfolioAPI: new PortfolioAPI(),
   }),
   introspection: true,
-  playground: true
+  playground: true,
 });
 
 debugger;
