@@ -3,6 +3,9 @@
 DEMO : https://portfolio-graphql-voltis.herokuapp.com/
 
 graphQL layer on top of rest server api
+
+rest api reference repo: https://github.com/avoltis/voltis-portfolio-api
+
 restAPI: https://portfolio-voltis.herokuapp.com/
 
 ## Start App
@@ -31,3 +34,5 @@ need to add Config Vars
 NODE_ENV to production
 
 - `heroku open`
+
+## MIT license - Please include permission notice

@@ -32,6 +32,8 @@ const typeDefs = gql`
     description: String
     skills: [String]
     address: String
+    skills: [String]
+    image: String
   }
 
   type social {
