@@ -48,6 +48,7 @@ const typeDefs = gql`
     address: String
     summary: String
     social: social
+    resume: String
     experience: [experience]
     education: [education]
     certifications: [certifications]
