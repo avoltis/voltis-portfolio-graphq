@@ -1,9 +1,9 @@
 # voltis-portfolio-graphql
 
-DEMO : https://portfolio-graphql-voltis.herokuapp.com/
+DEMO : https://portfolio-voltis-dev-graphql.herokuapp.com/
 
 graphQL layer on top of rest server api
-restAPI: https://portfolio-voltis.herokuapp.com/
+restAPI: https://portfolio-voltis-dev-rest-api.herokuapp.com/
 
 ## Start App
 
