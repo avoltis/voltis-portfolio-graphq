@@ -55,6 +55,7 @@ const typeDefs = gql`
     skills: [String]
     topSkills: [String]
     languages: [String]
+    hobbies: String
   }
 
   type Query {
